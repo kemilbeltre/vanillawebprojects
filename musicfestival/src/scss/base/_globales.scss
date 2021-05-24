@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before, *after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $mainFont;
+    font-size: 1.6rem;
+
+    &.body-fixed {
+        overflow: hidden;
+    }
+}
+
+p {
+    font-size: 2rem;
+    color: $black;
+}
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin:0 auto;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3rem;
+}

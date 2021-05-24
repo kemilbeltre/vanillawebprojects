@@ -1,0 +1,61 @@
+.tickets {
+    padding: $space 0;
+    h3 {
+        text-align: center;
+        color: $white;
+    }
+
+    .ticket-container {
+        margin-top: $space / 2;
+        @include grid(2, $space);
+    }
+
+    .plan {
+        p {
+            color: $white;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.permit {
+    width: 100%;
+    border-spacing: 0;
+    thead {
+        background-color: $rose;
+        th {
+            padding: $space / 4;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: $light;
+            font-size: 2rem;
+        }
+    }
+
+    tbody {
+        background-color: $white;
+        td {
+            padding: $space / 4;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        tr {
+            &:last-of-type {
+                td {
+                    border: none;
+                }
+            }
+        }
+    }
+    tfoot {
+        background-color: $purple;
+        td {
+            padding: $space / 4;
+            text-align: center;
+            font-size: 3rem;
+            color: $white;
+        }
+    }
+}

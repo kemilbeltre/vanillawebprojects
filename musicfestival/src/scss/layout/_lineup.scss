@@ -1,0 +1,73 @@
+.lineup {
+    background-color: $rose;
+    padding: $space 0;
+
+    h3, p {
+        text-align: center;
+        color: $white;
+    }
+    .day {
+        text-transform: uppercase;
+        margin: $space;
+    }
+}
+
+.container-stages {
+    @include tablet {
+        @include grid(2, $space);
+    }
+
+    .stage {
+        padding-top: $space / 2;
+    }
+
+    .stage-name {
+        color: $black;
+        font-size: 2rem;
+        font-weight: $light;
+
+        &:after {
+            content: '';
+            width: 20rem;
+            height: 10rem;
+            display: block;
+            margin: 2rem auto 0 auto;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+    }
+   
+}
+
+.edm .stage-name {
+    &:after {
+        background-image: url('../img/icon_edm.png');
+    }
+}
+
+.rock .stage-name {
+    &:after {
+        background-image: url('../img/icon_rock.png');
+    }
+}
+
+.calendar {
+    padding: 0;
+    list-style: none;
+    li {
+        padding: $space;
+        font-weight: $bold;
+        span {
+        font-weight: $regular;
+        }
+    }
+}
+
+.bg-green .calendar li:nth-child(odd) {
+    background-color: darken($green, 10);
+}
+.bg-yellow .calendar li:nth-child(odd) {
+    background-color: darken($yellow, 10);
+}
