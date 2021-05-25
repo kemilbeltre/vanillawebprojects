@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styels.css">
+    <title>Product</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="./img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegation">
+        <a class="navegation__link navegation__link--active" href="index.html">Store</a>
+        <a class="navegation__link" href="about.html">About</a>
+    </nav>
+
+    <main class="container">
+        <h1>React JS</h1>
+
+        <div class="tshirt">
+            <img src="img/3.jpg" alt="Image T-shirt" class="tshirt__image">
+
+            <div class="tshirt__content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci iste odit, iusto debitis, voluptas
+                    alias vero eaque illum dolorum magni amet quaerat dolore id cupiditate.</p>
+
+                <form class="form">
+                    <select class="form__field">
+                        <option disabled selected>-- Choose size --</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+                    <input class="form__field" type="number" placeholder="Cantidad" min="1">
+                    <input class="form__submit" type="submit" value="Add to Cart">
+                </form>
+                <!-- .tshirt__content -->
+            </div>
+            <!-- .tshirt -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Front End Store - Copyright 2021 by Kemil Beltre</p>
+    </footer>
+
+</body>
+
+</html>
