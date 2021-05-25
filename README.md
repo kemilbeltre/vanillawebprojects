@@ -1,4 +1,4 @@
-# 1+ Web Projects With Vanilla JavaScript  
+# 2+ Web Projects With Vanilla JavaScript  
 
 This is a main repository for all of my basics projects using Vanilla JavaScript (without frameworks).
 |  #  |            Project             | Live Demo |
