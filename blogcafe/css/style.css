@@ -1,0 +1,266 @@
+:root {
+    --fontHeading: font-family: 'Open Sans', sans-serif;
+    --fontPharagraps: font-family: 'PT Sans', sans-serif;
+
+    --primary: #784D3C;
+    --white: #ffffff;
+    --black: #000000;
+    --grays: #e1e1e1;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem 10px */
+}
+*, *:before, *after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fontPharagraps);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+    /* Globals */
+    .container {
+        width: min(90%, 120rem);
+        margin: 0 auto;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1, h2, h3, h4 {
+        font-family: var(--fontHeading);
+        line-height: 1.2;
+    }
+    h1 {
+        font-size: 4.8rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 3.2rem;
+    }
+    h4 {
+        font-size: 2.8rem;
+    }
+    img {
+        max-width: 100%;
+    }
+
+    /* Utilities */
+    .no-margin {
+        margin: 0;
+    }
+    .no-padding {
+        padding: 0;
+    }
+    .text-center {
+        text-align: center;
+    }
+
+    /* Header */
+    .webp .header {
+        background-image: url(../img/banner.webp);
+    }
+    .no-webp .header {
+        background-image: url(../img/banner.jpg);
+    }
+    .header {
+        height: 60rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .text__header {
+        text-align: center;
+        color: var(--white);
+        margin-top: 5rem;
+    }
+
+    @media (min-width: 768px) {
+        .text__header {
+            margin-top: 15rem;
+        }
+    }
+
+    .bar {
+        padding-top: 4rem;
+    }
+
+    @media (min-width: 768px) {
+        .bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .logo {
+        color: var(--white);
+    }
+    .logo__name {
+        font-weight: 400;
+    }
+    .logo__bold {
+        font-weight: 700;
+    }
+
+@media (min-width: 768px) {
+    .navegation {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+ .navegation__link {
+     display: block;
+     text-align: center;
+     font-size: 1.8rem;
+     color: var(--white);
+ }
+
+ @media (min-width: 768px) {
+     .main-content {
+         display: grid;
+         grid-template-columns: 2fr 1fr;
+         column-gap: 4rem;
+     }
+ }
+
+ .entrance {
+     border-bottom: 1px solid var(--grays);
+     margin-bottom: 2rem;
+ }
+ .entrance:last-of-type {
+     border: none;
+     margin-bottom: 0;
+ }
+
+ .button {
+     display: block;
+     font-family: var(--fontHeading);
+     color: var(--white);
+     text-align: center;
+     padding: 1rem 3rem;
+     font-size: 1.8rem;
+     text-transform: uppercase;
+     font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+ }
+ .button:hover{
+     cursor: pointer;
+ }
+
+ @media (min-width: 768px) {
+     .button {
+        display: inline-block;
+     }
+ }
+ .primary--button {
+     background-color: var(--black);
+ }
+ .secundary--button {
+     background-color: var(--primary);
+ }
+
+ .courses {
+     list-style: none;
+ }
+
+ .widget-course {
+    border-bottom: 1px solid var(--grays);
+    margin-bottom: 2rem;
+ }
+ .widget-course:last-of-type{
+     border: none;
+     margin-bottom: 0;
+ }
+ .widget-course__label {
+    font-family: var(--fontHeading);
+    font-weight: bold;
+ }
+ .widget-course__info {
+    font-weight: normal;
+ }
+.widget-course__label,
+.widget-course__info {
+    font-size: 2rem;
+}
+
+.footer {
+    background-color: var(--black);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    color: var(--white);
+    text-align: center;
+}
+
+/* Sobre Nosotros */
+    @media (min-width: 768px) {
+        .sobre-nosotros {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2rem;
+        }
+    }
+.course {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--grays);
+}
+@media (min-width: 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.course:last-of-type {
+    border: none;
+}
+
+.course__label {
+    font-family: var(--fontHeading);
+    font-weight: bold;
+ }
+ .course__info {
+    font-weight: normal;
+ }
+.course__label,
+.course__info {
+    font-size: 2rem;
+}
+
+/* Contacto */
+
+.contacto-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form {
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem 1rem 5rem 1rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--grays);
+}
+.campo__field--textarea {
+    height: 20rem;
+}
