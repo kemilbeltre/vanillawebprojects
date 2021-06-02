@@ -2,7 +2,8 @@
  * base styles and typography
  * ---------------
  */
- :root {
+
+:root {
     --orange-050: #ffe8d9;
     --orange-100: #ffd0b5;
     --orange-200: #ffb088;
@@ -13,7 +14,6 @@
     --orange-700: #c52707;
     --orange-800: #ad1d07;
     --orange-900: #841003;
-  
     --grey-050: #f5f7fa;
     --grey-100: #e4e7eb;
     --grey-200: #cbd2d9;
@@ -24,30 +24,134 @@
     --grey-700: #3e4c59;
     --grey-800: #323f4b;
     --grey-900: #1f2933;
-  }
-  
-  /*******************
+}
+
+/*******************
    Base styles
    *******************/
-  html {
+
+html {
     font-size: 150%;
     font-weight: 300;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     line-height: 1.4;
-  }
-  
-  body {
+}
+
+body {
     display: flex;
-    background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+    background-image: linear-gradient(236deg, #101110, #252729);
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  /*******************
+}
+
+/*******************
    Calculator
    *******************/
 
-   .calculator {
-       box-shadow: 0 0 25px rgba(0, 0, 0,);
-   }
+.calculator {
+    box-shadow: 0 0 25px rgb(31, 30, 30);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.calculator__display {
+    background-color: var(--grey-600);
+    color: var(--grey-050);
+    width: 17rem;
+    padding: 0.75rem 1rem;
+    text-align: right;
+    font-size: calc(1rem * 1.2 * 1.2);
+}
+
+.calculator__keys {
+    grid-gap: 2px;
+    background: var(--grey-300);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas:
+        ". . . ."
+        "seven eight nine equal"
+        "four five six equal"
+        "one two three equal"
+        "_zeroo _decmal clear equal";
+}
+
+.calculator__keys > button {
+    border: 0;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: _zero;
+}
+
+.decimal {
+    grid-area: _decimal;
+}
+
+.clear {
+    grid-area: clear;
+}
+.equal{
+    grid-area: equal;
+    background-color: var(--orange-500);
+    color: #fff;
+}
+.equal:active {
+    grid-area: equal;
+    background-color: var(--orange-600);
+    color: #fff;
+}
+
+.operator {
+    background: var(--grey-900);
+    color: #fff;
+}
+.number {
+    background: var(--grey-700);
+    color: #fff;
+}
+.number:active {
+    background: var(--grey-900);
+    color: #fff;
+}
+.operator:active {
+    background: var(--grey-700);
+    color: #fff;
+}
