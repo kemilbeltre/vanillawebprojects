@@ -146,12 +146,14 @@ body {
     color: #fff;
 }
 
-[data-type="number"] {
+[data-type="number"],
+[data-type="clear"] {
     background: var(--grey-600);
     color: #fff;
 }
 
-[data-type="number"]:active {
+[data-type="number"]:active,
+[data-type="clear"]:active {
     background: var(--grey-700);
     color: #fff;
 }
