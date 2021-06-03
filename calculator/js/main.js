@@ -35,7 +35,9 @@ keys.addEventListener("click", (e) => {
     const operator = calculator.dataset.operator;
     const secondNumber = displayValue;
 
-    display.textContent = calculate(firstNumber, operator, secondNumber);
+    if (operator) {
+      display.textContent = calculate(firstNumber, operator, secondNumber);
+    }
   }
   calculator.dataset.previusKeyType = type;
 });
@@ -49,5 +51,5 @@ function calculate(firstNumber, operator, secondNumber) {
   if (operator === "min") result = firstNumber - secondNumber;
   if (operator === "divide") result = firstNumber / secondNumber;
   if (operator === "times") result = firstNumber * secondNumber;
-  return result.toFixed(2);
+  return result //.toFixed(2);
 }
