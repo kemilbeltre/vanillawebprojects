@@ -15,13 +15,20 @@
 <body>
 
     <header>
-        <h1>Kemil's Todo List</h1>
+        <h1>This is your Todo List</h1>
     </header>
     <form action="">
-        <input type="text" class="todo-input">
-        <button class="todo-btn" type="submit">
+        <input type="text" class="todo-input" placeholder="Add a new task">
+        <button class="todo-button" type="submit">
             <i class="fa fa-plus-square"></i>
         </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="unCompleted">Uncompleted</option>
+            </select>
+        </div>
     </form>
 
     <div class="todo-container">
