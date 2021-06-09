@@ -98,7 +98,6 @@ function saveLocalTodos(todo) {
     todos = [];
   } else {
     todos = JSON.parse(localStorage.getItem("todos"));
-    console.log(todos);
   }
 
   todos.push(todo);
@@ -111,7 +110,6 @@ function getTodos() {
     todos = [];
   } else {
     todos = JSON.parse(localStorage.getItem("todos"));
-    console.log(todos);
   }
   todos.forEach(function (todo) {
     // Todo DIV
@@ -147,7 +145,6 @@ function removeLocalTodos(todo) {
     todos = [];
   } else {
     todos = JSON.parse(localStorage.getItem("todos"));
-    console.log(todos);
   }
   const todoIndex = todo.children[0].innerText;
   todos.splice(todos.indexOf(todoIndex), 1);
