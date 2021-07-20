@@ -1,0 +1,34 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #2d46b9;
+    --green-light: #1ed760;
+    --green-dark: #1db954;
+    --gray-light: #c1c3c6;
+    --gray-dark: #919496;
+    --gray-intense: #616467;
+    --hero-bg-color: #ffc362;
+    --hero-terms-link: #efefef;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
