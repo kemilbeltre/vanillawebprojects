@@ -1,4 +1,4 @@
-# 5+ Web Projects With Vanilla JavaScript  
+# 6+ Web Projects With Vanilla JavaScript  
 
 This is a main repository for all of my basics projects using Vanilla JavaScript (without frameworks).
 |  #  |            Project             | Live Demo |
@@ -8,3 +8,4 @@ This is a main repository for all of my basics projects using Vanilla JavaScript
 | 03  |       [Blog Cafe](https://github.com/kemilbeltre/vanillawebprojects/tree/main/blogcafe)       | [Live Demo](https://app-blog-cafe.netlify.app/)  |   
 | 04  |       [Design Web Freelance](https://github.com/kemilbeltre/vanillawebprojects/tree/main/freelance-design)       | [Live Demo](https://app-web-freelance.netlify.app/)  |     
 | 05  |       [Calculator](https://github.com/kemilbeltre/vanillawebprojects/tree/main/calculator)       | [Live Demo](https://app-custom-calculator.netlify.app/)  |     
+| 06  |       [Your todo-list](https://github.com/kemilbeltre/vanillawebprojects/tree/main/todo-list)       | [Live Demo](https://app-your-todo-list.netlify.app/)  | 
