@@ -215,8 +215,9 @@ header {
 }
 
 /* Change links color on hover */
-.menu-overlay li a:hover {
-    color: var(--blue);
+.menu-overlay li:hover {
+    cursor: pointer;
+    color: var(--green-light);
 }
 
 /* Separator */
@@ -238,11 +239,140 @@ header {
 }
 
 .menu-overlay-logo img {
+    height: 12rem;
     width: 9rem;
     cursor: pointer;
 }
 
-/*Menu on desktop*/
+/* Menu on Desktop */
 .nav-desktop {
     display: none;
+}
+
+.nav-desktop ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-desktop ul li {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-right: 3rem;
+    font-weight: 700;
+}
+
+.nav-desktop > .ul-color li:last-child {
+    width: 1.7rem;
+    height: 0.1rem;
+    background: var(--white);
+    transform: rotate(90deg);
+}
+
+.nav-desktop .ul-color li a:hover {
+    color: var(--green-light);
+}
+
+.profile-container {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+/* These lines will change the profile container elements color on hover and on checked */
+.profile-container:hover .profile,
+.dropdown-menu-toggle:checked + .dropdown-menu + .profile {
+    border-color: var(--green-light);
+}
+
+.profile-container:hover .profile svg,
+.profile-container:hover ul li:last-child svg,
+.dropdown-menu-toggle:checked + .dropdown-menu + .profile svg,
+.dropdown-menu-toggle:checked + .dropdown-menu + .profile + ul li:last-child svg {
+    fill: var(--green-light);
+}
+
+.profile-container:hover > ul li:first-child,
+.dropdown-menu-toggle:checked + .dropdown-menu + .profile + ul li:first-child {
+    color: var(--green-light);
+}
+
+/* Selects the li with text 'Profile' */
+.profile-container ul li:first-child {
+    margin-right: 1rem;
+}
+
+/* Selects the li that contains the arrow */
+.profile-container ul li:last-child {
+    margin-right: 0;
+}
+
+/* Selects the arrow */
+.profile-arrow {
+    width: 1.2rem;
+    fill: var(--white);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    width: 16rem;
+    height: 8rem;
+    position: absolute;
+    background: var(--white);
+    bottom: -9.5rem;
+    right: -2rem;
+    border-radius: 0.4rem;
+    visibility: hidden;
+}
+
+/* Input of type check that will be used to open and close the dropdown menu */
+.dropdown-menu-toggle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* This code will create the triangle that is on top of the dropdown menu */
+.dropdown-menu::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -1.3rem;
+    right: 1rem;
+    border-left: 1.6rem solid transparent;
+    border-right: 1.6rem solid transparent;
+    border-bottom: 1.6rem solid var(--white);
+}
+
+.dropdown-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+/* Dropdown menu 'Account' link */
+.dropdown-menu ul li:first-child {
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+/* Dropdown menu 'Log out' link */
+.dropdown-menu ul li:last-child {
+    margin-bottom: 1rem;
+    color: var(--gray-light);
+}
+
+/* This line will show the dropdown menu when the user clicks on 'Profile' */
+.dropdown-menu-toggle:checked + .dropdown-menu {
+    visibility: visible;
+}
+
+/* This line will change the rotation of the arrow when the dropdown menu is opened */
+.dropdown-menu-toggle:checked + .dropdown-menu + .profile + ul li:last-child svg {
+    transform: rotate(180deg);
 }
