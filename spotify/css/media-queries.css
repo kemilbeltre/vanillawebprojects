@@ -1,0 +1,44 @@
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+    /* HEADER */
+    header {
+        height: 8rem;
+    }
+
+    .header-container {
+        max-width: 97rem;
+    }
+
+    .header-logo img {
+        width: 13rem;
+    }
+
+    .nav-desktop {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    /* Circle around the profile icon */
+    .profile {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* Profile icon */
+    .profile svg {
+        width: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* HEADER */
+    .header-container {
+        max-width: 117rem;
+    }
+}
