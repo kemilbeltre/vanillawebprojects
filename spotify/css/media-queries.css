@@ -1,4 +1,35 @@
 @media screen and (min-width: 768px) {
+    /* HERO */
+    .hero-container {
+        padding-top: 0;
+        min-height: 64rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(
+                ellipse at center,
+                var(--hero-bg-color) 0%,
+                var(--hero-bg-color) 0%,
+                var(--hero-bg-color) 100%
+        );
+    }
+
+    .hero-title {
+        color: var(--green-dark);
+        font-size: 6.5rem;
+        line-height: 8rem;
+        letter-spacing: -0.4rem;
+    }
+
+    .hero-button {
+        color: var(--blue);
+        margin-bottom: 0;
+    }
+
+    .terms {
+        position: absolute;
+        bottom: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -34,6 +65,21 @@
     .profile svg {
         width: 2rem;
     }
+
+    /* HERO */
+    .hero-title {
+        font-size: 8rem;
+        margin-bottom: 0;
+    }
+
+    .hero-content {
+        width: 70%;
+    }
+
+    .hero-button {
+        position: relative;
+        top: 6rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -41,4 +87,10 @@
     .header-container {
         max-width: 117rem;
     }
+
+    /* HERO */
+    .hero-button {
+        top: 5rem;
+    }
+
 }
