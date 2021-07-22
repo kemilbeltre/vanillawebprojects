@@ -1,8 +1,11 @@
 header {
-    height: 5.5rem;
+    height: 5.6rem;
     background: var(--black);
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 999;
 }
 

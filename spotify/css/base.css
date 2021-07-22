@@ -7,8 +7,8 @@
     --gray-light: #c1c3c6;
     --gray-dark: #1e7dbd;
     --gray-intense: #616467;
-    --hero-bg-color: #ffc362;
-    --hero-terms-link: #efefef;
+    --hero-bg-color: #0f3aa7;
+    --hero-terms-link: rgb(41, 65, 171);
 }
 
 html,
