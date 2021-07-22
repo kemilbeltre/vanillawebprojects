@@ -30,11 +30,86 @@
         position: absolute;
         bottom: 1.2rem;
     }
+
+    /* ALBUMS */
+    .albums-container {
+        width: 75rem;
+        margin: 0 auto;
+    }
+
+    .albums-cards-container {
+        flex-wrap: wrap;
+        overflow: visible;
+        padding: 5rem 0;
+    }
+
+    .album {
+        min-width: 0;
+        width: 33.33%;
+        box-sizing: border-box;
+        padding: 0.8rem;
+        position: relative;
+    }
+
+    .album:first-child,
+    .album:last-child {
+        padding: 0.8rem;
+    }
+
+    .album > img {
+        height: 100%;
+    }
+
+    .albums-content {
+        padding-bottom: 0;
+    }
+
+    /* Looking for music? */
+    .albums-content h2 {
+        font-size: 4rem;
+    }
+
+    .album-info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        justify-content: center;
+        opacity: 0;
+        margin: 0.8rem;
+        transition: all 0.4s ease;
+        cursor: pointer;
+    }
+
+    .album-info h4 {
+        margin-top: 0.5rem;
+        font-weight: 400;
+        letter-spacing: 0.005rem;
+    }
+
+    .album-info a {
+        position: relative;
+        bottom: -2rem;
+    }
+
+    .album-info:hover {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .album-info:hover > h2 {
+        color: var(--white);
+        white-space: normal;
+        overflow: initial;
+        text-overflow: initial;
+    }
 }
 
 @media screen and (min-width: 992px) {
     /* HEADER */
     header {
+        background-color: rgba(0, 0, 0, 0.6);
         height: 8rem;
     }
 
@@ -80,6 +155,29 @@
         position: relative;
         top: 6rem;
     }
+
+    /* ALBUMS */
+    .albums-container {
+        width: 97rem;
+    }
+
+    .albums-cards-container {
+        padding-top: 7rem;
+        padding-bottom: 13rem;
+    }
+
+    /* Looking for music */
+    .albums-content h2 {
+        font-size: 4.5rem;
+    }
+
+    .album-info {
+        padding: 0 1rem;
+    }
+
+    .album-info h4 {
+        font-size: 1.6rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -91,6 +189,19 @@
     /* HERO */
     .hero-button {
         top: 5rem;
+    }
+
+    /* ALBUMS */
+    .albums-container {
+        width: 117rem;
+    }
+
+    .album-info h2 {
+        font-size: 3rem;
+    }
+
+    .album-info h4 {
+        font-size: 1.8rem;
     }
 
 }
