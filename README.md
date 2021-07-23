@@ -9,4 +9,4 @@ This is a main repository for all of my basics projects using Vanilla JavaScript
 | 04  |       [Design Web Freelance](https://github.com/kemilbeltre/vanillawebprojects/tree/main/freelance-design)       | [Live Demo](https://app-web-freelance.netlify.app/)  |     
 | 05  |       [Calculator](https://github.com/kemilbeltre/vanillawebprojects/tree/main/calculator)       | [Live Demo](https://app-custom-calculator.netlify.app/)  |     
 | 06  |       [Your todo-list](https://github.com/kemilbeltre/vanillawebprojects/tree/main/todo-list)       | [Live Demo](https://app-your-todo-list.netlify.app/)  |  
-| 07  |       [Spotify](https://github.com/kemilbeltre/vanillawebprojects/tree/main/todo-list)       | [Live Demo](https://app-site-spotify.netlify.app/)  |   
+| 07  |       [Spotify](https://github.com/kemilbeltre/vanillawebprojects/tree/main/spotify)       | [Live Demo](https://app-site-spotify.netlify.app/)  |   
