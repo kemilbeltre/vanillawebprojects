@@ -104,6 +104,25 @@
         overflow: initial;
         text-overflow: initial;
     }
+
+    /* FOOTER */
+    .footer-nav {
+        width: 75rem;
+    }
+
+    .top-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom-links ul li {
+        font-size: 1.16rem;
+    }
+
+    .country span,
+    .bottom-links span {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -178,6 +197,50 @@
     .album-info h4 {
         font-size: 1.6rem;
     }
+
+    /* FOOTER */
+    footer {
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+    }
+
+    .footer-nav {
+        width: 97rem;
+        position: relative;
+    }
+
+    .logo-footer,
+    .top-links,
+    .social-icons {
+        vertical-align: top;
+    }
+
+    .logo-footer {
+        display: inline-block;
+        width: 16.666666%;
+    }
+
+    .logo-footer .img {
+        width: 13rem;
+    }
+
+    .top-links {
+        display: inline-flex;
+        width: 50%;
+    }
+
+    .social-icons {
+        display: inline-block;
+        margin: 0 1.5rem 0 auto;
+        padding-top: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .social-icons ul li {
+        padding: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -204,4 +267,8 @@
         font-size: 1.8rem;
     }
 
+    /* FOOTER */
+    .footer-nav {
+        width: 117rem;
+    }
 }
